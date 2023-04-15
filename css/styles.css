@@ -72,7 +72,7 @@ h3 {
 h4 {
     font-family:Verdana;
     font-size: 14px;
-    color: #585858;
+    color: #3b3b3b;
 }
 
 footer p{
@@ -190,6 +190,13 @@ form {
     cursor: pointer;
 }
 
+/* Aplica pseudoclase en boton */
+.cards-button:hover {
+    background-color: #c23471;
+}
+.cards-button:active {
+    background-color: #f80101;
+}
 
 /* Salones */
 /* Grid container salones */
@@ -231,4 +238,13 @@ form {
     width: 100px;
     float: left;
     margin: 20px;
+}
+
+/* Aplica pseudoclase en salon para seleccionar */
+.card-salon:hover {
+    background-color: #c23471;
+}
+
+.card-salon:active {
+    background-color: #f80101;
 }
