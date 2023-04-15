@@ -8,13 +8,16 @@ header {
     background-color:#fcaace;
     width: 100%;
     max-height:fit-content;
+    display: flex;
+    position: sticky;
+    justify-content: space-evenly;
+    align-items: center;
     }
 
 .logo-header {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin: 15px;
-    float: left;
 }
 
 /* Barra de navegación */
@@ -26,13 +29,14 @@ a {
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 nav li {
-    margin: 4%;
-    display: inline-block;
-    position: relative;
-    left: 5%;
+    padding: 10px;
+    margin-right: 15px;
 }
 
 /* Generales */
