@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color:#fcaace;
+    width: 100%;
+    max-height:fit-content;
+    }
+
+.logo-header {
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    float: left;
+}
+
+/* Barra de navegación */
+a {
+    text-decoration: none;
+    color:#F9F9F9;
+    font-family: Verdana;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 4%;
+    display: inline-block;
+    position: relative;
+    left: 5%;
+}
+
+/* Generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 200%;
+    opacity: 85%;
+    margin: 25px 0px 50px 80px;
+}
+
+h2 {
+    text-align: center;
+    font-family:Verdana;
+    font-size: 18px;
+    color: #585858;
+    margin: 15px 0px;
+}
+
+h3 {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 16px;
+    margin: 20px;
+    font-family: Verdana;
+    font-weight:200;
+}
+h4 {
+    font-family:Verdana;
+    font-size: 14px;
+    color: #585858;
+}
+
+footer p{
+    margin: 2px;
+    padding: 1px;
+    text-align: left;
+    font-size: 12px;
+}
+
+/* Index */
+.parrafo-index {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#foto1 {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+/* Contacto */
+/* Formulario contacto */
+
+form {
+    padding: 2%;
+    width: 280px;
+    font-size: medium;
+    background-color: #cac5c5;
+    color: #6b6b6b;
+    border-radius: 2%;
+    margin: 50px 20px 30px 70px;
+    }
+
+#parrafo-contacto {
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    margin-left: 8%;
+}
+
+.form-items {
+    padding-bottom: 2%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.titulo-form {
+    margin-bottom: 5%;
+}
+
+.completar {
+    width: 260px;
+    padding: 2%;
+    text-align: center;
+    border: none;
+    margin: 2%;
+}
+
+.enter {
+    text-align: center;
+}
+
+.enter > input {
+    background-color: #535252;
+    border-style: none;
+    border-radius: 5%;
+    padding: 3%;
+    font-size: normal;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Decoración y animaciones */
+
+/* Grid container decoración y animaciones */
+.padre-cards h2 {
+    margin: 30px;
+}
+
+.card {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    background-color: #f5d3f0;
+    width: 320px;
+    padding-bottom: 20px;
+}
+
+.card-img {
+    width: 270px;
+    height: 180px;
+    margin: 24px;
+}
+
+.card h4, p{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2%;
+}
+
+.card ul {
+    text-align: center;
+    margin: 2px;
+}
+
+.cards-button {
+    padding: 5px;
+    border-radius: 3%;
+    border: none;
+    color: #ffffff;
+    background-color: #f72997c2;
+    position: relative;
+    margin-left: 130px;
+    cursor: pointer;
+}
+
+/* Salones */
+/* Grid container salones */
+#section-salones {
+    display: inline-block;
+    }
+
+/* Cards */
+.card-salon {
+    display: inline-block;
+    margin: 10px 0px 6px 50px;
+    background-color: #f5d3f0;
+    width: 500px;
+    height: 140px;
+    cursor: pointer;
+}
+
+.card-salon h4{ 
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card-salon p {
+    text-align: center;
+    position: relative;
+    margin: 20px;
+}
+.mapa {
+    width: 600px;
+    height:450px;
+    margin: 10px 5px 10px 50px;
+    border: none;
+    float: left;
+}
+
+.salon-img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 20px;
+}

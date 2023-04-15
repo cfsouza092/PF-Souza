@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!--Link a css de forma externa-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../img/logofiestapp.svg">
+
+</head>
+<body>
+    <div>
+        <header id="arriba">
+            <a href="../index.html">
+                <img src="../img/logofiestapp.svg" alt="Logo Fiestapp" title="Este es el logo de Fiestapp" class="logo-header" >
+            </a>
+        
+    <!--Barra de navegación-->
+        <nav>
+    <!--Ejemplo de lista desordenada-->
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        
+        <li><a href="salones.html">Salones</a></li>
+        
+        <li><a href="decoracion.html">Decoración</a></li>
+        
+        <li><a href="animacion.html">Animación</a></li>
+        
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    
+        </nav>
+    </header>
+    </div>
+    
+    <main> 
+
+        <h1>Contacto</h1>
+
+        <div id="parrafo-contacto">
+            <p>Si tenes dudas sobre el servicio dejanos tu consulta y re responderemos a la brevedad</p>
+            <p>También podes comunicarte enviando un mail a atencion@fiestapp.com.ar</p>
+            <p>O en nuestras redes sociales</p>
+            
+        </div>
+        
+        <form>
+            <h2 class="titulo-form">Dejanos tu consulta</h2>
+            <!--El for del label debe ser igual al id del input-->
+           <div class="form-items">
+                <label for="nombre y apellido">Nombre y apellido</label>
+                <input type="text" id="nombre y apellido" placeholder="Ingresa nombre completo" required class="completar">
+            </div>
+
+            <div class="form-items">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="tumail@dominio.com" class="completar">
+            </div>
+            
+            <div class="form-items">
+                <label for="telefono">Número telefónico</label>
+                <input type="tel" id="telefono" required class="completar">
+            </div>
+            
+            <div class="form-items">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="30" rows="5" class="completar"></textarea>
+            </div>
+            
+            <div class="enter">
+                <input type="submit" value="Enviar mensaje">
+            </div>
+        </form>
+
+    </main>
+</body>
+<footer>
+    <hr>
+    <div>
+        <p>Defensa y protección del consumidor</p>
+        <p>Términos y condiciones</p>
+        <p>Políticas de privacidad</p>
+        <p>Copyright 2023©</p>
+    </div>
+</footer>
+
+</html>
