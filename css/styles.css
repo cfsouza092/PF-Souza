@@ -152,9 +152,6 @@ form {
 /* Decoración y animaciones */
 
 /* Grid container decoración y animaciones */
-.padre-cards h2 {
-    margin: 30px;
-}
 
 .card {
     display: inline-block;
@@ -174,12 +171,12 @@ form {
 .card h4, p{
     text-align: center;
     color: #000000;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
 
 .card ul {
     text-align: center;
-    margin: 2px;
+    display: block;
 }
 
 .cards-button {
@@ -192,6 +189,7 @@ form {
     margin-left: 130px;
     cursor: pointer;
 }
+
 
 /* Salones */
 /* Grid container salones */
