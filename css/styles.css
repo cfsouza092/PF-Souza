@@ -121,7 +121,7 @@
   
   .grid-container-contacto {
     display: grid;
-    margin: 0px 10px;
+    justify-items: end;
     grid-template-areas: 
     "formulario-contacto parrafo-contacto";
   }
