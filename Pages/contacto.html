@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Fiestapp</title>
     <!--Link a css de forma externa-->
     <link rel="stylesheet" href="../css/styles.css">
     <!--Favicon-->
     <link rel="shortcut icon" href="../img/logofiestapp.svg">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-    <div>
-        <header id="arriba">
-            <a href="../index.html">
-                <img src="../img/logofiestapp.svg" alt="Logo Fiestapp" title="Este es el logo de Fiestapp" class="logo-header" >
-            </a>
-        
+    <header class="header">
+        <a href="../index.html">
+            <img src="../img/logofiestapp.svg" alt="Logo Fiestapp" title="Este es el logo de Fiestapp" class="logo-header" >
+        </a>
     <!--Barra de navegación-->
-        <nav>
-    <!--Ejemplo de lista desordenada-->
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        
-        <li><a href="./salones.html">Salones</a></li>
-        
-        <li><a href="./decoracion.html">Decoración</a></li>
-        
-        <li><a href="./animacion.html">Animación</a></li>
-        
-        <li><a href="./contacto.html">Contacto</a></li>
-    </ul>
+        <nav class="nav-bar">
+ <!--Lista desordenada-->
+ <ul class="nav-menu">
+    <li class="nav-menu-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+
+    <li class="nav-menu-item"><a href="./salones.html" class="nav-link">Salones</a></li>
+
+    <li class="nav-menu-item"><a href="./decoracion.html" class="nav-link">Decoración</a></li>
     
-        </nav>
-    </header>
-    </div>
-    
+    <li class="nav-menu-item"><a href="./animacion.html" class="nav-link">Animación</a></li>
+
+    <li class="nav-menu-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+</ul>
+</nav>
+</header>
     <main> 
 
         <h1>Contacto</h1>
-
+    <div class="grid-container-contacto">
         <div id="parrafo-contacto">
             <p>Si tenes dudas sobre el servicio dejanos tu consulta y re responderemos a la brevedad</p>
             <p>También podes comunicarte enviando un mail a atencion@fiestapp.com.ar</p>
@@ -48,7 +46,7 @@
             
         </div>
         
-        <form>
+        <form class="formulario-contacto">
             <h2 class="titulo-form">Dejanos tu consulta</h2>
             <!--El for del label debe ser igual al id del input-->
            <div class="form-items">
@@ -75,7 +73,7 @@
                 <input type="submit" value="Enviar mensaje">
             </div>
         </form>
-
+    </div>
     </main>
 </body>
 <footer>

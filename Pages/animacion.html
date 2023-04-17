@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animación</title>
-     <!--Link a css de forma externa-->
-     <link rel="stylesheet" href="../css/styles.css">
-     <!--Flavicon-->
-     <link rel="shortcut icon" href="../img/logofiestapp.svg">
- 
+    <title>Fiestapp</title>
+    <!--Link a css de forma externa-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../img/logofiestapp.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-<div>
-    <header id="arriba">
+    <header class="header">
         <a href="../index.html">
             <img src="../img/logofiestapp.svg" alt="Logo Fiestapp" title="Este es el logo de Fiestapp" class="logo-header" >
         </a>
+    <!--Barra de navegación-->
+        <nav class="nav-bar">
+ <!--Lista desordenada-->
+ <ul class="nav-menu">
+    <li class="nav-menu-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+
+    <li class="nav-menu-item"><a href="./salones.html" class="nav-link">Salones</a></li>
+
+    <li class="nav-menu-item"><a href="./decoracion.html" class="nav-link">Decoración</a></li>
     
-<!--Barra de navegación-->
-    <nav>
-<!--Ejemplo de lista desordenada-->
-<ul>
-    <li><a href="../index.html">Inicio</a></li>
-    
-    <li><a href="./salones.html">Salones</a></li>
-    
-    <li><a href="./decoracion.html">Decoración</a></li>
-    
-    <li><a href="./animacion.html">Animación</a></li>
-    
-    <li><a href="./contacto.html">Contacto</a></li>
+    <li class="nav-menu-item"><a href="./animacion.html" class="nav-link">Animación</a></li>
+
+    <li class="nav-menu-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
 </ul>
-
-    </nav>
-</div>
+</nav>
 </header>
-
-<div class="padre-cards">
-    <h2>La mejor animación para que disfruten de ese día tan especial</h2>
+<main>
+<h2>La mejor animación para que disfruten de ese día tan especial</h2>
+<div class="padre-cards2">
     <!--Card 1-->
-    <div class="card">
+    <div class="card card1">
         <img src="../img/lupita-anumaciones.jpg" alt="Lupita animaciones" class="card-img">
         <h4>Lupita animaciones</h4>
         <p>Show de burbujas</p>
@@ -49,7 +48,7 @@
     </div>
 
     <!--Card 2-->
-    <div class="card">
+    <div class="card card2">
         <img src="../img/mago.jpg" alt="Mago Emanuel" class="card-img">
         <h4>Mago Emanuel</h4>
         <p>Show de magia para toda la familia</p>
@@ -58,7 +57,7 @@
     </div>
 
     <!--Card 3-->
-    <div class="card">
+    <div class="card card3">
         <img src="../img/jocker.jpg" alt="Jocker animaciones" class="card-img">
         <h4>Jocker animaciones</h4>
         <p>Espectáculo en vivo</p>
@@ -67,14 +66,15 @@
     </div>
 
     <!--Card 4-->
-    <div class="card">
+    <div class="card card4">
         <img src="../img/clown.jpg" alt="Clown" class="card-img">
         <h4>Circo mágico</h4>
-        <p>Show de clown para los mas pequeños</p>
+        <p>Show de payasos</p>
         <p class="precio">$5500</p>
         <button class="cards-button">Contratar</button>
     </div>
 </div>
+</main>
 </body>
 <footer>
     <hr>
