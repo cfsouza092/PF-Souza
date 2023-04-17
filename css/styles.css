@@ -317,7 +317,7 @@
     background-color: #f80101;
   }
   
-  /* MOBILE */
+  /* Tablet */
   
   @media (max-width: 800px) {
     /* Modificaciones generales*/
@@ -476,4 +476,4 @@
     margin-bottom: 20px;
     }
   }
-  /* menor a 650 ordenar uno debajo del otro */
+  /* Agregar version Mobile: menor a 650 ordenar uno debajo del otro */
