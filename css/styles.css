@@ -3,61 +3,61 @@
     padding: 0;
   }
   
-  /* Header */
-  header {
-    background-color:#fcaace;
-    width: 100%;
-    max-height:fit-content;
-    display: flex;
-    position: fixed;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 0;
-    }
-  
-  .logo-header {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
+/* Header */
+header {
+  background-color:#fcaace;
+  width: 100%;
+  max-height:fit-content;
+  display: flex;
+  position: fixed;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
   }
   
-  /* Barra de navegación */
-  
-  .nav-bar{
-    display: flex;
-    padding: 10px 20px;
-    width: 100%;
+.logo-header {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
   }
   
-  .nav-menu {
-    flex: 1;
-    text-align: right;
+/* Barra de navegación */
+  
+.nav-bar{
+  display: flex;
+  padding: 10px 20px;
+  width: 100%;
   }
   
-  .nav-menu-item{
-    display: inline-block;
-    justify-content: space-between;
-    margin: 0 15px;
+.nav-menu {
+  flex: 1;
+  text-align: right;
+  }
+
+.nav-menu-item{
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 15px;
   }
   
-  .nav-link {
-    color: white;
-    text-decoration: none;
-    font-family: Verdana;
-    padding: 8px 12px;
-    border-radius: 3px
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: Verdana;
+  padding: 8px 12px;
+  border-radius: 3px
   }
   
-  .nav-link:hover {
-    color: #440729;
+.nav-link:hover {
+  color: #440729;
   }
   
-  .nav-link:active {
-    background-color: #c23471;
-    color: #ffffff;
+.nav-link:active {
+  background-color: #c23471;
+  color: #ffffff;
   }
   
-  /* Generales */
+/* Generales */
   body {
     font-family: 'Montserrat', sans-serif;
   }
@@ -101,7 +101,7 @@
     text-align: left;
     font-size: 12px;
   }
-  
+
   /* Index */
   .parrafo-index {
     text-align: center;
@@ -117,7 +117,7 @@
     margin: 20px 0px;
   }
   
-  /* Contacto con grids*/
+/* Contacto con grids*/
   
   .grid-container-contacto {
     display: grid;
@@ -181,9 +181,9 @@
     color: #ffffff;
   }
   
-  /* Decoración y animaciones */
+/* Decoración y animaciones */
   
-  /* Grid container decoración y animaciones */
+/* Grid container decoración y animaciones */
   
   .padre-cards {
     display: grid;
@@ -239,7 +239,7 @@
     cursor: pointer;
   }
   
-  /* Aplica pseudoclase en boton */
+/* Aplica pseudoclase en boton */
   .cards-button:hover {
     background-color: #c23471;
   }
@@ -247,8 +247,8 @@
     background-color: #f80101;
   }
   
-  /* Salones */
-  /* Grid container salones */
+/* Salones */
+ /* Grid container salones */
   #gridcontainer-salones {
     display:grid;
     grid-template-areas: 
@@ -258,7 +258,7 @@
     justify-items: center;
     }
   
-  /* Cards salon */
+/* Cards salon */
   .card-salon {
     margin: 10px 0px 6px 50px;
     background-color: #f5d3f0;
@@ -317,7 +317,7 @@
     background-color: #f80101;
   }
   
-  /* Tablet */
+/* Tablet */
   
   @media (max-width: 800px) {
     /* Modificaciones generales*/
