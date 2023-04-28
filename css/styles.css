@@ -182,15 +182,11 @@ header {
 /* Grid container decoración y animaciones */
   
   .padre-cards {
-    display: flex;
-    flex-direction: column;
-    justify-items:center;
-    align-items: center;
-  
+    justify-content: center;
   }
   
   .card {
-    margin-left: 8px;
+    margin: 10px;
     margin-bottom: 10px;
     background-color: #f5d3f0;
     width: 320px;
@@ -202,7 +198,7 @@ header {
   .card-img {
     width: 270px;
     height: 180px;
-    margin: 25px;
+    margin: 20px 15px;
   }
   
   .card h4 {
@@ -419,21 +415,6 @@ header {
     height:450px;
   }
 }
-
-/* Media Decoración y animaciones */
-@media (min-width: 768px) {
-  .padre-cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-  }
-
-@media (min-width: 1024px) {
-  .padre-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-  }
-  }
 
 /* Media Contacto */
 @media (min-width: 1024px) {
