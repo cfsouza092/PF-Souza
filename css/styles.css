@@ -196,8 +196,9 @@ header {
     margin-bottom: 10px;
     background-color: #f5d3f0;
     width: 320px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     position: static;
+    border: none;
   }
   
   .card-img {
@@ -206,14 +207,21 @@ header {
     margin: 25px;
   }
   
-  .card h4, p{
+  .card h4 {
     text-align: center;
     color: #000000;
-    margin-bottom: 20px;
+    margin: 2px;
+  }
+
+  .card p {
+    text-align: center;
+    margin: 2px;
   }
   
   .card ul {
     text-align: center;
+    margin: 0px;
+    font-size: 16px;
   }
   
   .card ul li {
