@@ -140,10 +140,8 @@ header {
   
   #parrafo-contacto {
     grid-area: parrafo-contacto;
-    padding: 10px;
-    justify-self: start;
-    align-self: center;
     margin-left: 10px;
+    text-align: center;
   }
   
   .form-items {
