@@ -1,0 +1,13 @@
+footer {
+    margin-bottom: 60px;
+    p{
+    margin: 2px;
+    padding: 1px;
+    text-align: left;
+    font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    margin-bottom: 10px;
+}
