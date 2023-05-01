@@ -254,10 +254,11 @@ footer p {
   margin: 5px;
 }
 #gridcontainer-salones .card-salon:hover {
-  background-color: #c23471;
+  transform: scale(1.2);
 }
 #gridcontainer-salones .card-salon:active {
-  background-color: #f80101;
+  background-color: rgba(247, 41, 151, 0.631372549);
+  transform: scale(1);
 }
 #gridcontainer-salones .card1 {
   grid-area: card1;

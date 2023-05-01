@@ -29,10 +29,11 @@
             margin: 5px;
         }
         &:hover{
-            background-color: $btn-hover;
+            transform: scale(1.2);
         }
         &:active {
-            background-color: $btn-active;
+            background-color: $salon-active;
+            transform: scale(1);
         }
     }
     .card1 {
