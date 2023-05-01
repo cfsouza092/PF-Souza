@@ -234,5 +234,88 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/* Grid container salones */
+#gridcontainer-salones {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+#gridcontainer-salones .card-salon {
+  margin: 5px 0px;
+  background-color: #f5d3f0;
+  width: 400px;
+  max-width: 100%;
+  height: 80px;
+  cursor: pointer;
+}
+#gridcontainer-salones .card-salon h4 {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+}
+#gridcontainer-salones .card-salon p {
+  text-align: center;
+  margin: 5px;
+  font-size: 14px;
+}
+#gridcontainer-salones .card-salon .salon-img {
+  height: 70px;
+  width: 70px;
+  float: left;
+  margin: 5px;
+}
+#gridcontainer-salones .card-salon:hover {
+  background-color: #c23471;
+}
+#gridcontainer-salones .card-salon:active {
+  background-color: #f80101;
+}
+#gridcontainer-salones .card1 {
+  grid-area: card1;
+}
+#gridcontainer-salones .card2 {
+  grid-area: card2;
+}
+#gridcontainer-salones .card3 {
+  grid-area: card3;
+}
+#gridcontainer-salones .mapa {
+  width: 400px;
+  height: 250px;
+  border: none;
+  grid-area: mapa;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+  #gridcontainer-salones {
+    display: grid;
+    grid-template-areas: "mapa card1" "mapa card2" "mapa card3";
+    justify-items: center;
+  }
+  #gridcontainer-salones .card-salon {
+    width: 500px;
+    height: 120px;
+    top: 0;
+  }
+  #gridcontainer-salones .card-salon h4 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  #gridcontainer-salones .card-salon p {
+    margin: 10px;
+    font-size: 16px;
+  }
+  #gridcontainer-salones .card-salon .salon-img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+  #gridcontainer-salones .mapa {
+    width: 600px;
+    height: 450px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
