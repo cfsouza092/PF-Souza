@@ -1,0 +1,66 @@
+@import "../var/variables";
+/* Grid container decoración y animaciones */
+.padre-cards {
+    justify-content: center;
+    .card {
+        margin: 10px;
+        margin-bottom: 10px;
+        background-color: #f5d3f0;
+        width: 320px;
+        padding-bottom: 15px;
+        position: static;
+        border: none;
+        .card-img {
+            width: 270px;
+            height: 180px;
+            margin: 20px 15px;
+        }
+        h4 {
+            text-align: center;
+            color: #000000;
+            margin: 2px;
+        }
+        p {
+            text-align: center;
+            margin: 2px;
+        }
+        ul {
+            text-align: center;
+        margin: 0px;
+        font-size: 16px;
+            li {
+                list-style: none;
+            }
+        }
+        .cards-button {
+            padding: 5px;
+            border-radius: 3%;
+            border: none;
+            color: #ffffff;
+            background-color: #f72997c2;
+            margin-left: 130px;
+            cursor: pointer;
+            justify-content: center;
+            &:hover{
+                background-color: $btn-hover;
+            }
+            &:active{
+                background-color: $btn-active;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+@media (min-width: 1024px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    }
