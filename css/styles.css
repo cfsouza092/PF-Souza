@@ -208,7 +208,7 @@ footer p {
   padding: 5px;
   border-radius: 3%;
   border: none;
-  color: #ffffff;
+  color: white;
   background-color: rgba(247, 41, 151, 0.7607843137);
   margin-left: 130px;
   cursor: pointer;
@@ -221,18 +221,6 @@ footer p {
   background-color: #f80101;
 }
 
-@media (min-width: 768px) {
-  .padre-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .padre-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 /* Grid container salones */
 #gridcontainer-salones {
   display: flex;

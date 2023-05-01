@@ -5,7 +5,7 @@
     .card {
         margin: 10px;
         margin-bottom: 10px;
-        background-color: #f5d3f0;
+        background-color: $card-background;
         width: 320px;
         padding-bottom: 15px;
         position: static;
@@ -17,7 +17,7 @@
         }
         h4 {
             text-align: center;
-            color: #000000;
+            color: $h4;
             margin: 2px;
         }
         p {
@@ -36,8 +36,8 @@
             padding: 5px;
             border-radius: 3%;
             border: none;
-            color: #ffffff;
-            background-color: #f72997c2;
+            color: $clasic;
+            background-color: $btn-cards;
             margin-left: 130px;
             cursor: pointer;
             justify-content: center;
@@ -50,17 +50,3 @@
         }
     }
 }
-
-@media (min-width: 768px) {
-    .padre-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    }
-
-@media (min-width: 1024px) {
-    .padre-cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    }
