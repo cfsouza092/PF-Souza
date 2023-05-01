@@ -93,8 +93,8 @@ header .logo-header {
   color: #440729;
 }
 .nav-bar .nav-link:active {
-  background-color: #c23471;
-  color: white;
+  font-weight: bold;
+  color: #440729;
 }
 
 @media (min-width: 768px) {
@@ -113,7 +113,7 @@ header .logo-header {
   header .logo-header {
     width: 80px;
     height: 80px;
-    margin: 10px;
+    margin: 10px 50px;
   }
   /* Barra de navegación */
   .nav-bar {
@@ -129,6 +129,10 @@ header .logo-header {
   }
   .nav-bar .nav-link {
     font-family: Verdana;
+    font-size: 1.2rem;
+  }
+  .nav-bar .nav-link:active {
+    transform: scale(0.9);
   }
 }
 footer {
@@ -211,9 +215,8 @@ footer p {
   border: none;
   color: white;
   background-color: rgba(247, 41, 151, 0.7607843137);
-  margin-left: 130px;
+  margin: 15px;
   cursor: pointer;
-  justify-content: center;
 }
 .padre-cards .card .cards-button:hover {
   background-color: #c23471;
@@ -254,7 +257,7 @@ footer p {
   margin: 5px;
 }
 #gridcontainer-salones .card-salon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 #gridcontainer-salones .card-salon:active {
   background-color: rgba(247, 41, 151, 0.631372549);
