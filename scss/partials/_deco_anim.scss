@@ -42,9 +42,12 @@
             cursor: pointer;
             &:hover{
                 background-color: $btn-hover;
+                transform: scale(1.05);
             }
             &:active{
                 background-color: $btn-active;
+                transform: scale(1);
+                font-weight: bold;
             }
         }
     }

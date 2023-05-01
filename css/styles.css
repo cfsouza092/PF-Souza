@@ -220,9 +220,12 @@ footer p {
 }
 .padre-cards .card .cards-button:hover {
   background-color: #c23471;
+  transform: scale(1.05);
 }
 .padre-cards .card .cards-button:active {
   background-color: #f80101;
+  transform: scale(1);
+  font-weight: bold;
 }
 
 /* Grid container salones */
