@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*GENERALES Y REUTIlIZABLES*/
 * {
   margin: 0;
   padding: 0;
@@ -347,7 +346,7 @@ footer p {
   padding: 3%;
   font-size: normal;
   cursor: pointer;
-  color: #ffffff;
+  color: white;
   margin-bottom: 15px;
 }
 .grid-container-contacto #parrafo-contacto {

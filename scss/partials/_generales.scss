@@ -1,4 +1,4 @@
-/*GENERALES Y REUTIlIZABLES*/
+@import "../var/variables";
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ h2 {
     text-align: center;
     font-family:Verdana;
     font-size: 18px;
-    color: #585858;
+    color: $h2;
     margin: 15px 0px;
 }
 

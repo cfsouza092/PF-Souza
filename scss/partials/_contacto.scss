@@ -6,8 +6,8 @@
     .formulario-contacto {
         width: 280px;
         font-size: medium;
-        background-color: #cac5c5;
-        color: #6b6b6b;
+        background-color: $background-contacto;
+        color: $font-color-contacto;
         border-radius: 2%;
         display: flex;
         flex-direction: column;
@@ -32,13 +32,13 @@
         .enter {
             text-align: center;
             input {
-                background-color: #535252;
+                background-color: $background-input;
                 border-style: none;
                 border-radius: 5%;
                 padding: 3%;
                 font-size: normal;
                 cursor: pointer;
-                color: #ffffff;
+                color: $clasic;
                 margin-bottom: 15px;
             }
         }
