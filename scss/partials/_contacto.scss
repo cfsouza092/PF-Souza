@@ -32,7 +32,7 @@
         .enter {
             text-align: center;
             input {
-                background-color: $background-input;
+                background-color: $background-enter;
                 border-style: none;
                 border-radius: 5%;
                 padding: 3%;
@@ -40,6 +40,15 @@
                 cursor: pointer;
                 color: $clasic;
                 margin-bottom: 15px;
+                &:hover {
+                    background-color: $enter-hover;
+                    transform: scale(1.05);
+                }
+                &:active {
+                    background-color: $enter-active;
+                    transform: scale(1);
+                    font-weight: bold;
+                }
             }
         }
         }

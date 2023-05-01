@@ -355,6 +355,15 @@ footer p {
   color: white;
   margin-bottom: 15px;
 }
+.grid-container-contacto .formulario-contacto .enter input:hover {
+  background-color: rgba(83, 82, 82, 0.8235294118);
+  transform: scale(1.05);
+}
+.grid-container-contacto .formulario-contacto .enter input:active {
+  background-color: rgba(16, 172, 10, 0.7529411765);
+  transform: scale(1);
+  font-weight: bold;
+}
 .grid-container-contacto #parrafo-contacto {
   text-align: center;
   margin: 10px;
