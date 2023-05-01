@@ -1,7 +1,7 @@
 @import "../var/variables";
 
 header{
-    background-color: $background-header;
+    background-image: linear-gradient(to left, $background-header, $clasic, $background-header);
     width: 100%;
     max-height:fit-content;
     display: flex;
@@ -63,6 +63,8 @@ header{
 
 @media (min-width: 1024px) {
     header{
+        background-color: $background-header;
+        background-image: none;
         top: 0;
         .logo-header {
             width: 80px;

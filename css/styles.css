@@ -50,7 +50,7 @@ h3 {
   }
 }
 header {
-  background-color: #fcaace;
+  background-image: linear-gradient(to left, #fcaace, white, #fcaace);
   width: 100%;
   max-height: fit-content;
   display: flex;
@@ -106,6 +106,8 @@ header .logo-header {
 }
 @media (min-width: 1024px) {
   header {
+    background-color: #fcaace;
+    background-image: none;
     top: 0;
   }
   header .logo-header {
