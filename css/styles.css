@@ -84,8 +84,7 @@ header .logo-header {
   height: 48px;
 }
 .nav-bar .nav-menu {
-  margin: 0;
-  padding: 0;
+  margin-top: 10px;
 }
 .nav-bar .nav-menu-item {
   list-style: none;
