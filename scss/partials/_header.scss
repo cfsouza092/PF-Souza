@@ -36,6 +36,8 @@ header{
     height: 48px;
     .nav-menu {
         margin-top: 10px;
+        padding-left: 0;
+        gap: 10px;
     }
     .nav-menu-item{
         list-style: none;
@@ -87,6 +89,7 @@ header{
             position: absolute;
             right: 0;
             margin-right: 20px;
+            margin-top: 0;
         }
         .nav-menu-item{
             margin: 1.5rem;

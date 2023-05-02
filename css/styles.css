@@ -85,6 +85,8 @@ header .logo-header {
 }
 .nav-bar .nav-menu {
   margin-top: 10px;
+  padding-left: 0;
+  gap: 10px;
 }
 .nav-bar .nav-menu-item {
   list-style: none;
@@ -129,6 +131,7 @@ header .logo-header {
     position: absolute;
     right: 0;
     margin-right: 20px;
+    margin-top: 0;
   }
   .nav-bar .nav-menu-item {
     margin: 1.5rem;
