@@ -34,12 +34,12 @@ header{
     bottom: 0;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
     height: 48px;
     .nav-menu {
         display: flex;
         justify-content: space-around;
+        padding: 0;
     }
     .nav-menu-item{
         list-style: none;
