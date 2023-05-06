@@ -14,3 +14,11 @@ $enter-hover: #535252d2;
 $enter-active: #10ac0ac0;
 $background-contacto: #cac5c5;
 $font-color-contacto: #6b6b6b;
+
+/*Mixins*/
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
