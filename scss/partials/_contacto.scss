@@ -1,8 +1,5 @@
 .grid-container-contacto {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-items:center;
-    align-items: center;
+    @include flex-columna;
     .formulario-contacto {
         width: 280px;
         font-size: medium;

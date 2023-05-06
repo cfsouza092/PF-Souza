@@ -50,7 +50,6 @@ h3 {
     font-size: 16px;
   }
 }
-/*Mixins*/
 header {
   background-image: linear-gradient(to left, #fcaace, white, #fcaace);
   width: 100%;
@@ -191,7 +190,6 @@ main h4 {
     margin: 20px 0px;
   }
 }
-/*Mixins*/
 /* Grid container decoración y animaciones */
 .padre-cards {
   justify-content: center;
@@ -246,7 +244,6 @@ main h4 {
   font-weight: bold;
 }
 
-/*Mixins*/
 /* Grid container salones */
 #gridcontainer-salones {
   display: flex;
@@ -333,7 +330,7 @@ main h4 {
 }
 .grid-container-contacto {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
 }
