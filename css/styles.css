@@ -116,7 +116,7 @@ header .navbar .logo-header {
   }
 }
 footer {
-  margin-bottom: 60px;
+  margin: 10px 0px;
 }
 footer .redes-sociales {
   background-color: #c9c8c8;
@@ -143,11 +143,6 @@ footer p {
   font-size: 12px;
 }
 
-@media (min-width: 1024px) {
-  footer {
-    margin-bottom: 10px;
-  }
-}
 .parrafo-index {
   text-align: justify;
   padding-left: 3%;
