@@ -324,7 +324,6 @@ main h4 {
   display: flex;
   flex-direction: column;
   justify-self: end;
-  margin-left: 20px;
   margin-bottom: 20px;
 }
 .grid-container-contacto .formulario-contacto .titulo-form {
