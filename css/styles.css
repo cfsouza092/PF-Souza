@@ -50,6 +50,9 @@ h3 {
     font-size: 16px;
   }
 }
+header {
+  margin-bottom: 120px;
+}
 header .navbar {
   background-color: #fcaace;
 }
