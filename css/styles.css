@@ -118,10 +118,28 @@ header .navbar .logo-header {
 footer {
   margin-bottom: 60px;
 }
+footer .redes-sociales {
+  background-color: #c9c8c8;
+  padding: 5px;
+}
+footer .redes-sociales h5 {
+  margin: 3px;
+  text-align: center;
+  font-size: 18px;
+}
+footer .redes-sociales .iconos-redes {
+  display: flex;
+  justify-content: center;
+}
+footer .redes-sociales .iconos-redes .fa-brands {
+  margin: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
 footer p {
   margin: 2px;
   padding: 1px;
-  text-align: left;
+  text-align: center;
   font-size: 12px;
 }
 
