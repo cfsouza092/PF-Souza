@@ -20,7 +20,9 @@ function enviarFormulario(event) {
     document.querySelector("#telefono").value = "";
     document.querySelector("#mensaje").value = "";
 
-    alert("Nos comunicaremos a la brevedad!")
+    alert("Muchar gracias! Nos comunicaremos a la brevedad")
+    } else {
+        alert("Por favor, indique cuál es su consulta");
     }
 }
     formulario.addEventListener("submit", enviarFormulario);
