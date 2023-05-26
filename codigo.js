@@ -8,6 +8,8 @@ function enviarFormulario(event) {
     var telefono = document.querySelector("#telefono").value;
     var mensaje = document.querySelector("#mensaje").value;
 
+    if (userName !== "" && correo !== "" && telefono !== "" && mensaje !== "") {
+
     console.log("Nombre y apellido: " + userName)
     console.log("Correo electrónico: " + correo)
     console.log("Teléfono: " + telefono)
@@ -17,5 +19,8 @@ function enviarFormulario(event) {
     document.querySelector("#correo").value = "";
     document.querySelector("#telefono").value = "";
     document.querySelector("#mensaje").value = "";
+
+    alert("Nos comunicaremos a la brevedad!")
+    }
 }
     formulario.addEventListener("submit", enviarFormulario);
