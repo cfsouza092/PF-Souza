@@ -55,31 +55,31 @@
     <main> 
         <h1>Contacto</h1>
     <div class="grid-container-contacto">     
-        <form class="formulario-contacto">
+        <form class="formulario-contacto" action="" method="post">
             <h2 class="titulo-form">Dejanos tu consulta</h2>
             <!--El for del label debe ser igual al id del input-->
             <div class="form-items">
-                <label for="nombre y apellido">Nombre y apellido</label>
-                <input type="text" id="nombre y apellido" placeholder="Ingresa nombre completo" required class="completar">
+                <label for="userName">Nombre y apellido</label>
+                <input type="text" name="userName" id="userName" placeholder="Ingresa nombre completo" required class="completar">
             </div>
 
             <div class="form-items">
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" placeholder="tumail@dominio.com" class="completar">
+                <input type="email" name="correo" id="correo" placeholder="tumail@dominio.com" class="completar">
             </div>
             
             <div class="form-items">
                 <label for="telefono">Número telefónico</label>
-                <input type="tel" id="telefono" required class="completar">
+                <input type="tel" name="telefono" id="telefono" required class="completar">
             </div>
             
             <div class="form-items">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" cols="30" rows="5" class="completar"></textarea>
+                <label for="mensaje" >Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="completar"></textarea>
             </div>
             
-            <div class="enter" onclick="alert ('Nos comunicaremos a la brevedad!')">
-                <input type="submit" value="Enviar mensaje">
+            <div class="enter">
+                <input type="submit" value="Enviar mensaje" onclick="enviarFormulario(event)">
             </div>
         </form>
         <div id="parrafo-contacto">
@@ -105,7 +105,7 @@
             <p>Copyright 2023©</p>
         </div>
     </footer>
-    <script src="../codigo.js"></script>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="../codigo.js"></script>
 </body>
 </html>
