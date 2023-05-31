@@ -5,22 +5,43 @@
     align-items: center;
     .formulario-pago {
         width: 280px;
-        font-size: medium;
-        background-color: $background-contacto;
+        font-size: 14px;
+        background-color: #e4caca;
         color: $font-color-contacto;
         border-radius: 2%;
         display: flex;
         flex-direction: column;
-        justify-self: end;
         margin-bottom: 20px;
+        padding: 15px;
+        h2 {
+            margin: 5px;
+            color: #1f1d1d;
+        }
         .form-items {
             padding-bottom: 2%;
             text-align: center;
             margin-top: 1%;
+            .completar {
+                width: 230px;
+            }
+        }
+        .seguridad-tc {
+            padding-bottom: 2%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            margin: 10px 0;
+            #vencimiento {
+                width: 50%;
+            }
+            #cvv {
+                width: 50%;
+            }
         }
         .enter {
             text-align: center;
-            input {
+            .pagar {
                 background-color: $background-enter;
                 border-style: none;
                 border-radius: 5%;
@@ -28,7 +49,7 @@
                 font-size: normal;
                 cursor: pointer;
                 color: $clasic;
-                margin-bottom: 15px;
+                margin: 10px 0;
                 &:hover {
                     background-color: $enter-hover;
                     transform: scale(1.05);

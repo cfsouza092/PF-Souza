@@ -54,33 +54,43 @@
         </header>
     <main>
         <h1>Plataforma de pago</h1>
-            <div class="grid-container-pago">
-                <form id="formulario-pago">
-                    <div class="form-items">
+
+        <h2>Detalles del Pago</h2>
+
+        <div id="carrito-datos"></div>
+
+        <div class="grid-container-pago">
+            <form class="formulario-pago">
+                <h2>Forma de pago</h2>
+                <div class="form-items">
                     <label for="nombre-tarjeta">Nombre en la tarjeta:</label>
-                    <input type="text" id="nombre-tarjeta" required>
-                    </div>
+                    <input type="text" id="nombre-tarjeta" class= "completar" required>
+                </div>
 
-                    <div class="form-items">
+                <div class="form-items">
                     <label for="numero-tarjeta">Número de tarjeta:</label>
-                    <input type="text" id="numero-tarjeta" required>
+                    <input type="text" id="numero-tarjeta" class="completar" required>
                     </div>
 
-                    <div class="form-items">
-                    <label for="fecha-expiracion">Fecha de expiración:</label>
-                    <input type="text" id="fecha-expiracion" placeholder="MM/AA" required>
+                <div class="seguridad-tc">
+                    <div>
+                        <label for="vencimiento">Venc:</label>
+                        <input type="text" id="vencimiento" placeholder="MM/AA" required>
                     </div>
 
-                    <div class="form-items">
-                    <label for="cvv">CVV:</label>
-                    <input type="text" id="cvv" required>
+                    <div>
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" required>
                     </div>
-                    
-                    <div class="enter">
-                    <button type="submit">Realizar Pago</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                
+                <div class="enter">
+                    <button type="submit" class="pagar">Realizar Pago</button>
+                </div>
+            </form>
+        </div>
     </main>
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>

@@ -75,3 +75,41 @@ function cargarCarritoDesdeLocalStorage() {
 
 // Cargar el carrito al cargar la página
 window.addEventListener('load', cargarCarritoDesdeLocalStorage);
+
+// Función para cargar los datos del carrito en la página de pago
+function cargarDatosCarrito() {
+    // Obtener el carrito almacenado en el LocalStorage
+    const carritoGuardado = localStorage.getItem('carrito');
+
+    if (carritoGuardado) {
+        const carrito = JSON.parse(carritoGuardado);
+
+        // Crear elementos en el DOM para mostrar los datos del carrito
+        const carritoDatosContainer = document.getElementById('carrito-datos');
+
+        const listaProductos = document.createElement('ul');
+        carrito.forEach((producto) => {
+            const itemProducto = document.createElement('li');
+            itemProducto.textContent = `${producto.nombre} - $${producto.precio}`;
+            listaProductos.appendChild(itemProducto);
+        });
+
+        const total = document.createElement('p');
+        total.textContent = `Total: $${calcularTotal(carrito)}`;
+
+        carritoDatosContainer.appendChild(listaProductos);
+        carritoDatosContainer.appendChild(total);
+    }
+}
+
+// Función para calcular el total del carrito
+function calcularTotal(carrito) {
+    let total = 0;
+    carrito.forEach((producto) => {
+        total += producto.precio;
+    });
+    return total;
+}
+
+// Cargar los datos del carrito al cargar la página
+window.addEventListener('load', cargarDatosCarrito);
