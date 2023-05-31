@@ -43,7 +43,7 @@ function mostrarCarrito() {
         detalleCarrito.classList.remove('visible');
         botonPagar.disabled = true; // Deshabilitar el botón de pagar
     }
-    guardarCarritoEnLocalStorage();
+    guardarCarritoEnLocalStorage ()
 }
 // Función para vaciar el carrito
 function vaciarCarrito() {
@@ -61,18 +61,14 @@ function pagar() {
 // Función para guardar el carrito en el almacenamiento local
 function guardarCarritoEnLocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    localStorage.setItem('carritoCantidad', carritoCantidad.toString());
 }
 
 // Función para cargar el carrito desde el almacenamiento local
 function cargarCarritoDesdeLocalStorage() {
     const carritoGuardado = localStorage.getItem('carrito');
-    const carritoCantidadGuardada = localStorage.getItem('carritoCantidad');
 
-    if (carritoGuardado && carritoCantidadGuardada) {
+    if (carritoGuardado) {
         carrito = JSON.parse(carritoGuardado);
-        const cantidad = parseInt(carritoCantidadGuardada);
-        carritoCantidad.innerText = cantidad.toString();
         mostrarCarrito();
     }
 }
