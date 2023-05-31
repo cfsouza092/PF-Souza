@@ -81,6 +81,17 @@
         <div class="parrafo-index">
             <p>Es por eso que Fiestapp representa para los dueños de salones, animadores de fiestas y emprendedores una oportunidad para hacer crecer su público, destacar su negocio y tener un canal de venta online a bajo costo.</p>
         </div>
+        <button id="carrito-btn" class="carrito-button" onclick="mostrarDetalleCarrito()">
+            <i class="fas fa-shopping-cart"></i> <span id="carrito-cantidad">0</span>
+        </button>
+        <div id="detalle-carrito" class="carrito-detalle collapse">
+            <ul id="carrito-lista"></ul>
+            <div id="carrito-total"></div>
+            <div class="carrito-botones">
+                <button class="carrito-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button class="carrito-pagar" onclick="pagar()">Pagar</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="redes-sociales">
@@ -99,6 +110,7 @@
             <p>Copyright 2023©</p>
         </div>
     </footer>
-    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 </html>

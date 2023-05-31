@@ -54,39 +54,50 @@
         </header>
     <main> 
         <h1>Contacto</h1>
-    <div class="grid-container-contacto">     
-        <form class="formulario-contacto" action="" method="post">
-            <h2 class="titulo-form">Dejanos tu consulta</h2>
-            <!--El for del label debe ser igual al id del input-->
-            <div class="form-items">
-                <label for="userName">Nombre y apellido</label>
-                <input type="text" name="userName" id="userName" placeholder="Ingresa nombre completo" required class="completar">
-            </div>
+        <div class="grid-container-contacto">     
+            <form class="formulario-contacto" action="" method="post">
+                <h2 class="titulo-form">Dejanos tu consulta</h2>
+                <!--El for del label debe ser igual al id del input-->
+                <div class="form-items">
+                    <label for="userName">Nombre y apellido</label>
+                    <input type="text" name="userName" id="userName" placeholder="Ingresa nombre completo" required class="completar">
+                </div>
 
-            <div class="form-items">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" name="correo" id="correo" placeholder="tumail@dominio.com" class="completar">
+                <div class="form-items">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" placeholder="tumail@dominio.com" class="completar">
+                </div>
+                
+                <div class="form-items">
+                    <label for="telefono">Número telefónico</label>
+                    <input type="tel" name="telefono" id="telefono" required class="completar">
+                </div>
+                
+                <div class="form-items">
+                    <label for="mensaje" >Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="completar"></textarea>
+                </div>
+                
+                <div class="enter">
+                    <input type="submit" value="Enviar mensaje">
+                </div>
+            </form>
+            <div id="parrafo-contacto">
+                <p>Si tenes dudas sobre el servicio dejanos tu consulta y te responderemos a la brevedad</p>
+                <p>También podes comunicarte enviando un mail a <a href="mailto:atencion@fiestapp.com.ar">atencion@fiestapp.com.ar</a></p>            
             </div>
-            
-            <div class="form-items">
-                <label for="telefono">Número telefónico</label>
-                <input type="tel" name="telefono" id="telefono" required class="completar">
-            </div>
-            
-            <div class="form-items">
-                <label for="mensaje" >Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="completar"></textarea>
-            </div>
-            
-            <div class="enter">
-                <input type="submit" value="Enviar mensaje">
-            </div>
-        </form>
-        <div id="parrafo-contacto">
-            <p>Si tenes dudas sobre el servicio dejanos tu consulta y te responderemos a la brevedad</p>
-            <p>También podes comunicarte enviando un mail a <a href="mailto:atencion@fiestapp.com.ar">atencion@fiestapp.com.ar</a></p>            
         </div>
-    </div>
+        <button id="carrito-btn" class="carrito-button" onclick="mostrarDetalleCarrito()">
+            <i class="fas fa-shopping-cart"></i> <span id="carrito-cantidad">0</span>
+        </button>
+        <div id="detalle-carrito" class="carrito-detalle collapse">
+            <ul id="carrito-lista"></ul>
+            <div id="carrito-total"></div>
+            <div class="carrito-botones">
+                <button class="carrito-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button class="carrito-pagar" onclick="pagar()">Pagar</button>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="redes-sociales">
@@ -107,5 +118,6 @@
     </footer>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="../js/codigo.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>
