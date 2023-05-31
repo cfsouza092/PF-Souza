@@ -61,7 +61,7 @@
                 <h4>Lupita animaciones</h4>
                 <p>Show de burbujas</p>
                 <p class="precio">$5000</p>
-                <button class="cards-button">Contratar</button>
+                <button class="cards-button" onclick="contratar('Lupita Animaciones', 5000)">Contratar</button>
             </div>
 
             <!--Card 2-->
@@ -70,7 +70,7 @@
                 <h4>Mago Emanuel</h4>
                 <p>Show de magia para toda la familia</p>
                 <p class="precio">$6500</p>
-                <button class="cards-button">Contratar</button>
+                <button class="cards-button" onclick="contratar('Mago Emanuel', 6500)">Contratar</button>
             </div>
 
             <!--Card 3-->
@@ -79,7 +79,7 @@
                 <h4>Jocker animaciones</h4>
                 <p>Espectáculo en vivo</p>
                 <p class="precio">$7000</p>
-                <button class="cards-button">Contratar</button>
+                <button class="cards-button" onclick="contratar('Jocker Animaciones', 7000)">Contratar</button>
             </div>
 
             <!--Card 4-->
@@ -88,7 +88,18 @@
                 <h4>Circo mágico</h4>
                 <p>Show de payasos</p>
                 <p class="precio">$5500</p>
-                <button class="cards-button">Contratar</button>
+                <button class="cards-button" onclick="contratar('Circo Mágico', 5500)">Contratar</button>
+            </div>
+        </div>
+        <button id="carrito-btn" class="carrito-button" onclick="mostrarDetalleCarrito()">
+            <i class="fas fa-shopping-cart"></i> <span id="carrito-cantidad">0</span>
+        </button>
+        <div id="detalle-carrito" class="carrito-detalle collapse">
+            <ul id="carrito-lista"></ul>
+            <div id="carrito-total"></div>
+            <div class="carrito-botones">
+                <button class="carrito-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button class="carrito-pagar" onclick="pagar()">Pagar</button>
             </div>
         </div>
     </main>
@@ -110,5 +121,6 @@
         </div>
     </footer>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>
