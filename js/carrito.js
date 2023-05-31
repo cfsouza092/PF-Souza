@@ -43,6 +43,7 @@ function mostrarCarrito() {
         detalleCarrito.classList.remove('visible');
         botonPagar.disabled = true; // Deshabilitar el botón de pagar
     }
+    guardarCarritoEnLocalStorage();
 }
 // Función para vaciar el carrito
 function vaciarCarrito() {
@@ -70,8 +71,9 @@ function cargarCarritoDesdeLocalStorage() {
 
     if (carritoGuardado && carritoCantidadGuardada) {
         carrito = JSON.parse(carritoGuardado);
-        carritoCantidad = parseInt(carritoCantidadGuardada);
-        actualizarCarrito();
+        const cantidad = parseInt(carritoCantidadGuardada);
+        carritoCantidad.innerText = cantidad.toString();
+        mostrarCarrito();
     }
 }
 
