@@ -54,41 +54,43 @@
         </header>
     <main>
         <h1>Plataforma de pago</h1>
+        <section>
+            <div class="detalles-pago">
+                <h2>Detalles del Pago</h2>
 
-        <h2>Detalles del Pago</h2>
-
-        <div id="carrito-datos"></div>
-
-        <div class="grid-container-pago">
-            <form class="formulario-pago">
-                <h2>Forma de pago</h2>
-                <div class="form-items">
-                    <label for="nombre-tarjeta">Nombre en la tarjeta:</label>
-                    <input type="text" id="nombre-tarjeta" class= "completar" required>
-                </div>
-
-                <div class="form-items">
-                    <label for="numero-tarjeta">Número de tarjeta:</label>
-                    <input type="text" id="numero-tarjeta" class="completar" required>
+                <div id="carrito-datos"></div>
+            </div>
+            <div class="grid-container-pago">
+                <form class="formulario-pago">
+                    <h2>Forma de pago</h2>
+                    <div class="form-items">
+                        <label for="nombre-tarjeta">Nombre en la tarjeta:</label>
+                        <input type="text" id="nombre-tarjeta" class= "completar" required>
                     </div>
 
-                <div class="seguridad-tc">
-                    <div>
-                        <label for="vencimiento">Venc:</label>
-                        <input type="text" id="vencimiento" placeholder="MM/AA" required>
-                    </div>
+                    <div class="form-items">
+                        <label for="numero-tarjeta">Número de tarjeta:</label>
+                        <input type="number" id="numero-tarjeta" class="completar" required>
+                        </div>
 
-                    <div>
-                        <label for="cvv">CVV:</label>
-                        <input type="text" id="cvv" required>
+                    <div class="seguridad-tc">
+                        <div>
+                            <label for="vencimiento">Venc:</label>
+                            <input type="number" id="vencimiento" placeholder="MM/AA" required>
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV:</label>
+                            <input type="number" id="cvv" required>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="enter">
-                    <button type="submit" class="pagar">Realizar Pago</button>
-                </div>
-            </form>
-        </div>
+                    
+                    <div class="enter">
+                        <button type="submit" class="pagar">Realizar Pago</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="../js/carrito.js"></script>

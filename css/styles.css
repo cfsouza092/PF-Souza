@@ -455,36 +455,61 @@ main h4 {
     grid-area: parrafo-contacto;
   }
 }
-.grid-container-pago {
+section {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
 }
-.grid-container-pago .formulario-pago {
+section .detalles-pago {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
   width: 280px;
   font-size: 14px;
   background-color: #e4caca;
-  color: #6b6b6b;
+  margin-bottom: 15px;
+  border-radius: 2%;
+  padding: 5px;
+}
+section .detalles-pago h2 {
+  color: #1f1d1d;
+}
+section .detalles-pago #carrito-datos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section .grid-container-pago {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+section .grid-container-pago .formulario-pago {
+  width: 280px;
+  font-size: 14px;
+  background-color: #e4caca;
+  color: #1f1d1d;
   border-radius: 2%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   padding: 15px;
 }
-.grid-container-pago .formulario-pago h2 {
+section .grid-container-pago .formulario-pago h2 {
   margin: 5px;
   color: #1f1d1d;
 }
-.grid-container-pago .formulario-pago .form-items {
+section .grid-container-pago .formulario-pago .form-items {
   padding-bottom: 2%;
   text-align: center;
   margin-top: 1%;
 }
-.grid-container-pago .formulario-pago .form-items .completar {
+section .grid-container-pago .formulario-pago .form-items .completar {
   width: 230px;
 }
-.grid-container-pago .formulario-pago .seguridad-tc {
+section .grid-container-pago .formulario-pago .seguridad-tc {
   padding-bottom: 2%;
   display: flex;
   flex-direction: row;
@@ -492,16 +517,16 @@ main h4 {
   text-align: center;
   margin: 10px 0;
 }
-.grid-container-pago .formulario-pago .seguridad-tc #vencimiento {
+section .grid-container-pago .formulario-pago .seguridad-tc #vencimiento {
   width: 50%;
 }
-.grid-container-pago .formulario-pago .seguridad-tc #cvv {
+section .grid-container-pago .formulario-pago .seguridad-tc #cvv {
   width: 50%;
 }
-.grid-container-pago .formulario-pago .enter {
+section .grid-container-pago .formulario-pago .enter {
   text-align: center;
 }
-.grid-container-pago .formulario-pago .enter .pagar {
+section .grid-container-pago .formulario-pago .enter .pagar {
   background-color: #535252;
   border-style: none;
   border-radius: 5%;
@@ -511,14 +536,45 @@ main h4 {
   color: white;
   margin: 10px 0;
 }
-.grid-container-pago .formulario-pago .enter .pagar:hover {
+section .grid-container-pago .formulario-pago .enter .pagar:hover {
   background-color: rgba(83, 82, 82, 0.8235294118);
   transform: scale(1.05);
 }
-.grid-container-pago .formulario-pago .enter .pagar:active {
+section .grid-container-pago .formulario-pago .enter .pagar:active {
   background-color: rgba(16, 172, 10, 0.7529411765);
   transform: scale(1);
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section .detalles-pago {
+    margin: 60px;
+  }
+  section .grid-container-pago .formulario-pago {
+    width: 340px;
+  }
+  section .grid-container-pago .formulario-pago .form-items {
+    padding-bottom: 2%;
+    text-align: center;
+    margin-top: 1%;
+  }
+  section .grid-container-pago .formulario-pago .form-items .completar {
+    width: 280px;
+  }
+  section .grid-container-pago .formulario-pago .seguridad-tc {
+    width: 315px;
+  }
+  section .grid-container-pago .formulario-pago .seguridad-tc #vencimiento {
+    width: 50%;
+  }
+  section .grid-container-pago .formulario-pago .seguridad-tc #cvv {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
