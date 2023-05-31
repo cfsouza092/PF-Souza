@@ -5,7 +5,9 @@ Brinda visibilidad a los emprendimientos y permite que amplíen su público, log
 
 ## Comenzando 🚀
 
-Para poder ver el proyecto hacer click <a href= "https://cfsouza092.github.io/PF-Souza/"> aquí </a>
+Para poder ver el deploy del proyecto hacer click <a href= "https://cfsouza092.github.io/PF-Souza/"> aquí </a>
+
+Accede al contenido del<a href= "https://github.com/cfsouza092/PF-Souza"> repositorio en GitHub </a>
 
 
 ### Características 📋
