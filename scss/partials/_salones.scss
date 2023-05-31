@@ -57,14 +57,14 @@
         "mapa card1"
         "mapa card2"
         "mapa card3";
-        justify-items: center;
+        align-items: start;
         .card-salon {
             width: 500px;
             height: 120px;
-            top: 0;
+            margin: 0;
             h4{ 
                 font-size: 18px;
-                margin-top: 20px;
+                margin-top: 15px;
             }
             p {
                 margin: 10px;
@@ -77,8 +77,9 @@
             }
         }
         .mapa {
-            width: 600px;
-            height:450px;
+            width: 560px;
+            height:390px;
+            margin-right: 30px;
         }
     }
 }

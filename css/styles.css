@@ -354,16 +354,16 @@ main h4 {
   #gridcontainer-salones {
     display: grid;
     grid-template-areas: "mapa card1" "mapa card2" "mapa card3";
-    justify-items: center;
+    align-items: start;
   }
   #gridcontainer-salones .card-salon {
     width: 500px;
     height: 120px;
-    top: 0;
+    margin: 0;
   }
   #gridcontainer-salones .card-salon h4 {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   #gridcontainer-salones .card-salon p {
     margin: 10px;
@@ -375,8 +375,9 @@ main h4 {
     margin: 10px;
   }
   #gridcontainer-salones .mapa {
-    width: 600px;
-    height: 450px;
+    width: 560px;
+    height: 390px;
+    margin-right: 30px;
   }
 }
 .grid-container-contacto {
