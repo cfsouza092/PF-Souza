@@ -56,3 +56,24 @@ function pagar() {
     alert('Serás redirigido a la plataforma de pago');
     window.location.href = './pago.html';
 }
+
+// Función para guardar el carrito en el almacenamiento local
+function guardarCarritoEnLocalStorage() {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    localStorage.setItem('carritoCantidad', carritoCantidad.toString());
+}
+
+// Función para cargar el carrito desde el almacenamiento local
+function cargarCarritoDesdeLocalStorage() {
+    const carritoGuardado = localStorage.getItem('carrito');
+    const carritoCantidadGuardada = localStorage.getItem('carritoCantidad');
+
+    if (carritoGuardado && carritoCantidadGuardada) {
+        carrito = JSON.parse(carritoGuardado);
+        carritoCantidad = parseInt(carritoCantidadGuardada);
+        actualizarCarrito();
+    }
+}
+
+// Cargar el carrito al cargar la página
+window.addEventListener('load', cargarCarritoDesdeLocalStorage);

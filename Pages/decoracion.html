@@ -61,8 +61,8 @@
                 <img src="../img/globos.jpg" alt="Globos" class="card-img">
                 <h4>Globos</h4>
                 <p>50 Globos multicolor</p>
-                <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <p class="precio">$1500</p>
+                <button class="cards-button" onclick="contratar('Globos', 1500)">Comprar</button>
             </div>
 
             <!--Card 2-->
@@ -70,8 +70,8 @@
                 <img src="../img/cortina.jpg" alt="Cortina" class="card-img">
                 <h4>Cortina</h4>
                 <p>Cortina metalizada de 1m</p>
-                <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <p class="precio">$2500</p>
+                <button class="cards-button" onclick="contratar('Cortina', 2500)">Comprar</button>
             </div>
 
             <!--Card 3-->
@@ -79,8 +79,8 @@
                 <img src="../img/banderin.jpg" alt="Banderin" class="card-img">
                 <h4>Banderín</h4>
                 <p>Banderín feliz cumpleaños</p>
-                <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <p class="precio">$1500</p>
+                <button class="cards-button" onclick="contratar('Banderin', 1500)">Comprar</button>
             </div>
 
             <!--Card 4-->
@@ -88,8 +88,8 @@
                 <img src="../img/centro.jpg" alt="Centro de mesa" class="card-img">
                 <h4>Centro de mesa</h4>
                 <p>10 Centros de mesa</p>
-                <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <p class="precio">$3500</p>
+                <button class="cards-button" onclick="contratar('Centros de mesa', 3500)">Comprar</button>
             </div>   
 
             <!--Card 5-->
@@ -97,8 +97,8 @@
                 <img src="../img/mantel.jpg" alt="Mantel" class="card-img">
                 <h4>Mantel</h4>
                 <p>Mantel con tu personaje favorito</p>
-                <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <p class="precio">$2500</p>
+                <button class="cards-button" onclick="contratar('Mantel', 2500)">Comprar</button>
             </div>      
 
             <!--Card 6-->
@@ -106,8 +106,8 @@
                 <img src="../img/cotillon.jpg" alt="Cotillon" class="card-img">
                 <h4>Cotillon</h4>
                 <p>Cotillon completo para 20 invitados</p>
-                <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <p class="precio">$9500</p>
+                <button class="cards-button" onclick="contratar('Cotillon', 9500)">Comprar</button>
             </div>      
             <!--Card 7-->
             <div class="card col-12 col-md-6 col-lg-3">
@@ -115,7 +115,7 @@
                 <h4>Catering</h4>
                 <p>Catering completo para 20 invitados</p>
                 <p class="precio">$10000</p>
-                <button class="cards-button">Comprar</button>
+                <button class="cards-button" onclick="contratar('Catering p/20', 10000)">Comprar</button>
             </div>    
             <!--Card 8-->
             <div class="card col-12 col-md-6 col-lg-3">
@@ -123,7 +123,7 @@
                 <h4>Torta</h4>
                 <p>Torta personalizada 20 porciones</p>
                 <p class="precio">$8000</p>
-                <button class="cards-button">Comprar</button>
+                <button class="cards-button" onclick="contratar('Torta', 8000)">Comprar</button>
             </div>   
             
         </div>
@@ -143,7 +143,7 @@
                     <li>10 Manteles</li>
                 </ul>
                 <p class="precio">$7500</p>
-                <button class="cards-button">Comprar</button>
+                <button class="cards-button" onclick="contratar('Combo salón', 7500)">Comprar</button>
             </div>
 
             <!--Card 2-->
@@ -158,7 +158,7 @@
                     <li>Mantel con tu personaje favorito</li>
                 </ul>
                 <p class="precio">$4500</p>
-                <button class="cards-button">Comprar</button>
+                <button class="cards-button" onclick="contratar('Combo casa', 4500)">Comprar</button>
             </div>
 
             <!--Card 3-->
@@ -173,7 +173,7 @@
                     <li>Mantel con tu personaje favorito</li>
                 </ul>
                 <p class="precio">$5500</p>
-                <button class="cards-button">Comprar</button>
+                <button class="cards-button" onclick="contratar('Combo parque', 5500)">Comprar</button>
             </div>
             <!--Card 4-->
             <div class="card col-12 col-md-6 col-lg-3">
@@ -187,7 +187,18 @@
                     <li>Torta personalizada</li>
                 </ul>
                 <p class="precio">$25000</p>
-                <button class="cards-button">Comprar</button>
+                <button class="cards-button" onclick="contratar('Combo extra', 25000)">Comprar</button>
+            </div>
+        </div>
+        <button id="carrito-btn" class="carrito-button" onclick="mostrarDetalleCarrito()">
+            <i class="fas fa-shopping-cart"></i> <span id="carrito-cantidad">0</span>
+        </button>
+        <div id="detalle-carrito" class="carrito-detalle collapse">
+            <ul id="carrito-lista"></ul>
+            <div id="carrito-total"></div>
+            <div class="carrito-botones">
+                <button class="carrito-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button class="carrito-pagar" onclick="pagar()">Pagar</button>
             </div>
         </div>
     </main>
@@ -209,5 +220,6 @@
         </div>
     </footer>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>
