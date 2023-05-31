@@ -52,6 +52,35 @@
                 </div>
             </nav>
         </header>
-    <h1>Plataforma de pago</h1>
+    <main>
+        <h1>Plataforma de pago</h1>
+            <div class="grid-container-pago">
+                <form id="formulario-pago">
+                    <div class="form-items">
+                    <label for="nombre-tarjeta">Nombre en la tarjeta:</label>
+                    <input type="text" id="nombre-tarjeta" required>
+                    </div>
+
+                    <div class="form-items">
+                    <label for="numero-tarjeta">Número de tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" required>
+                    </div>
+
+                    <div class="form-items">
+                    <label for="fecha-expiracion">Fecha de expiración:</label>
+                    <input type="text" id="fecha-expiracion" placeholder="MM/AA" required>
+                    </div>
+
+                    <div class="form-items">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" required>
+                    </div>
+                    
+                    <div class="enter">
+                    <button type="submit">Realizar Pago</button>
+                    </div>
+                </form>
+            </div>
+    </main>
 </body>
 </html>

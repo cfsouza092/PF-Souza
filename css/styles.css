@@ -455,5 +455,49 @@ main h4 {
     grid-area: parrafo-contacto;
   }
 }
+.grid-container-pago {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.grid-container-pago .formulario-pago {
+  width: 280px;
+  font-size: medium;
+  background-color: #cac5c5;
+  color: #6b6b6b;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  margin-bottom: 20px;
+}
+.grid-container-pago .formulario-pago .form-items {
+  padding-bottom: 2%;
+  text-align: center;
+  margin-top: 1%;
+}
+.grid-container-pago .formulario-pago .enter {
+  text-align: center;
+}
+.grid-container-pago .formulario-pago .enter input {
+  background-color: #535252;
+  border-style: none;
+  border-radius: 5%;
+  padding: 3%;
+  font-size: normal;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 15px;
+}
+.grid-container-pago .formulario-pago .enter input:hover {
+  background-color: rgba(83, 82, 82, 0.8235294118);
+  transform: scale(1.05);
+}
+.grid-container-pago .formulario-pago .enter input:active {
+  background-color: rgba(16, 172, 10, 0.7529411765);
+  transform: scale(1);
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=styles.css.map */

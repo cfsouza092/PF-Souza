@@ -1,0 +1,44 @@
+.grid-container-pago{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    .formulario-pago {
+        width: 280px;
+        font-size: medium;
+        background-color: $background-contacto;
+        color: $font-color-contacto;
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-self: end;
+        margin-bottom: 20px;
+        .form-items {
+            padding-bottom: 2%;
+            text-align: center;
+            margin-top: 1%;
+        }
+        .enter {
+            text-align: center;
+            input {
+                background-color: $background-enter;
+                border-style: none;
+                border-radius: 5%;
+                padding: 3%;
+                font-size: normal;
+                cursor: pointer;
+                color: $clasic;
+                margin-bottom: 15px;
+                &:hover {
+                    background-color: $enter-hover;
+                    transform: scale(1.05);
+                }
+                &:active {
+                    background-color: $enter-active;
+                    transform: scale(1);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
