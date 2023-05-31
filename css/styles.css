@@ -481,6 +481,10 @@ section .detalles-pago #carrito-datos li {
   padding: 0;
   margin: 0;
 }
+section .detalles-pago #carrito-datos p {
+  font-size: 18px;
+  font-weight: bold;
+}
 section .grid-container-pago {
   display: flex;
   flex-direction: column;
